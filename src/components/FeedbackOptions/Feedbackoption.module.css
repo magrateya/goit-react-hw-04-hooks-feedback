@@ -1,0 +1,12 @@
+.container button:not(:last-child) {
+  margin-right: 10px;
+}
+.container button:hover {
+  background-color: teal;
+  color: white;
+  outline: none;
+  transition: all 250ms linear;
+}
+.container button {
+  padding: 5px 20px;
+}
