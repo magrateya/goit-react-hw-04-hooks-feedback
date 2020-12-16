@@ -33,7 +33,7 @@ export default function App() {
     return total && Math.round((good * 100) / total);
   };
 
-  const state = {
+  const optionsObj = {
     good,
     neutral,
     bad,
@@ -42,7 +42,7 @@ export default function App() {
   return (
     <>
       <Section title="Please leave feedback">
-        <FeedbackOptions options={state} onLeaveFeedback={handleClick} />
+        <FeedbackOptions options={optionsObj} onLeaveFeedback={handleClick} />
       </Section>
 
       <Section title="Statistics">
